@@ -4,13 +4,13 @@
          public $speed;
          public $model;
 
-         function __construct(){
-            echo $this->speed = "17";
-            echo $this->model = "Voltas";
+         function __construct($model,$speed){
+            echo $this->speed = $speed;
+            echo $this->model = $model;
          }
 
     }
 
-    $abhi = new AC();
+    $abhi = new AC("Voltas","17");
 
 ?>
