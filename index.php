@@ -1,23 +1,16 @@
 <?php
 
     class AC{
-         public $speed = 16;
+         public $speed;
+         public $model;
 
-        public function speedUp(){
-            $this->speed++;
-            print_r($this->speed);
-            // $this->speedUp();
-        }
-        public function speedDown(){
-            $this->speed--;
-        }
+         function __construct(){
+            echo $this->speed = "17";
+            echo $this->model = "Voltas";
+         }
+
     }
 
     $abhi = new AC();
-    $abhi->speedUp();
-
-    $main = new AC();
-    echo "This is main speed variable\n";
-    print_r($main->speed);
 
 ?>
