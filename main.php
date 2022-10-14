@@ -6,7 +6,7 @@
         }
     }
     $abhishek = new Abhi('Abhishek');
-    echo $abhishek->name;
+    // echo $abhishek->name;
 
 
 
