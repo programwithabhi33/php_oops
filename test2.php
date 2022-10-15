@@ -6,6 +6,12 @@
             echo "main";
         }
     }
+    class Abhi extends Base{
+        // When you inherite a abstract class you must be overide or implement the function or properties or methods that abstract class provide all abstract methods 
+        public function main(){
+
+        }
+    }
     // You cannot instantiate an abstract class object 
     $obj = new Base(); //This will throw an error
 
