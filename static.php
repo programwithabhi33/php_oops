@@ -4,12 +4,12 @@
         public static $count = 0;
         public $name;
         public function main(){
-            echo Abhi::$count . "\n";
+            echo self::$count . "\n";
             echo $this->name . "\n";
         }
         public function __construct($name){
             $this->name = $name;
-            Abhi::$count++;
+            self::$count++;
         }
     }
     $abhi = new Abhi('Abhishek');
