@@ -39,5 +39,13 @@
     // echo Abhi2::$count;
     // $abhi = new Abhi2();
 
-
+        class Abhi3{
+            public static $name = 'abhishek';
+            public function main(){
+                self::$name;
+                echo 'This is the main function in the Abhi3 class';
+            }
+        }
+        $abhi = new Abhi3();
+        $abhi->main();
 ?>
