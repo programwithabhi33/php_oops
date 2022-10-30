@@ -18,7 +18,7 @@
             $this->logger = $logger;
         }
     }
-    $log = new Test();
+    $log = new logger();
     $abhi = new User($log); //Passing the $log object to the User class,this is how User class dependet on the logger class and dependency injection works
     $abhi->CreateUser();
  
