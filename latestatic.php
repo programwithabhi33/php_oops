@@ -3,7 +3,7 @@
         public static $name = "Abhi";
         public function main(){
             echo static::$name;//This is the late static binding which can be called at runtime
-            echo self::$name;
+            echo self::$name; //This is the early static binding 
         }
         // public function __construct($name){
         //     self::$name = $name;
