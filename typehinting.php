@@ -15,21 +15,43 @@
 
 
 
-    class Abhi {
-        function test(){
-            echo "This is the test function in the Abhi class";
-        }
-    }
-    class Harry {
-        function test(){
-            echo "This is the test function in the Harry class";
-        }
-    }
+    // class Abhi {
+    //     function test(){
+    //         echo "This is the test function in the Abhi class";
+    //     }
+    // }
+    // class Harry {
+    //     function test(){
+    //         echo "This is the test function in the Harry class";
+    //     }
+    // }
 
-    // Here you can specify that the argument is must be the type of the specific class in this case it's only Abhi class,you cannot gave the another type of argument to the MakeCall function and that's class base typehinting
-    function MakeCall(Abhi $obj){
-        $obj->test();
-    }
-    $obj = new Harry();
-    MakeCall($obj);
+    // // Here you can specify that the argument is must be the type of the specific class in this case it's only Abhi class,you cannot gave the another type of argument to the MakeCall function and that's class base typehinting
+    // function MakeCall(Abhi $obj){
+    //     $obj->test();
+    // }
+    // $obj = new Harry();
+    // MakeCall($obj);
+
+        interface ABC{
+            function test();
+        }
+        class XYZ implements ABC {
+            public function test(){
+                echo "Test function in the XYZ class";
+            }
+        }
+        class Abhi implements ABC {
+            public function test(){
+                echo "Test function in the Abhi class";
+            }
+        }
+
+        // Here you can pass only that argument implements ABC interface in that class 
+        function MakeCall2(ABC $obj){
+            $obj->test();
+        }
+        $obj = new Abhi();
+        MakeCall2($obj);
+
 ?>
